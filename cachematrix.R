@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
+
+## this function creates a "special" matrix object from an existing 
+## "regular" matrix object, that in addition to storing
+## the matrix itself, it can store the value of its mean
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -20,7 +21,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## this function returns the mean of the special matrix, 
+## it checks if the mean value in the object is null
+## if not null it returns value stored, if null it calculates,
+## stores and then returns value
+
 
 
 cacheSolve <- function(x, ...) {
